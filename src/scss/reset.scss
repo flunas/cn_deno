@@ -1,0 +1,153 @@
+
+$W : 100vw;
+$H : 100vh;
+
+*{
+  outline: none;
+  box-sizing: border-box;
+  transition: all .3s linear;
+}
+body{
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+.el-drawer__body{
+  overflow-y: auto;
+}
+
+table{
+  display:inline-block;
+  margin-right:20px;
+  font-size: 0.8rem;
+  border-color: #d2d6dc;
+  margin-top: 6px;
+}
+
+.base{
+  width: 1080px;
+  align-self: center;
+  padding: 0 20px;
+  max-height: calc(#{$H} - 40px);
+  overflow-x: hidden;
+}
+
+//  共用样式
+// 用于-作用/参数/返回值/其它
+h3{
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+// 用于-给每个区块上下添加空白区
+.box{
+  margin-top: 10px;
+  display: block;
+}
+
+// 用于-代码块
+.codeBox{
+  background: var(--codeBoxBgColor);
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+// 用于-代码
+.code{
+  //color: var(--codeFontBaseColor);
+  font-size: 0.9rem;
+  margin: 3px;
+}
+// 用于-代码中字符串显示颜色
+.code_green{
+  color: var(--codeFontStringColor);
+}
+// 用于-函数 API 加粗加黑显示
+.codeApi{
+  color: var(--codeTitleApiFontColor);
+}
+
+// 用于-中英文显示按钮
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.6rem;
+
+  &:hover{
+    color: var(--buttonChineseFontColorHover);
+  }
+}
+
+// 用于-关键字 function 加颜色
+.key_function{
+  color: var(--keyWordFontColorFunction);
+}
+
+// 用于-关键字 await
+.key_await{
+  color: var(--keyWordFontColorAwait);
+}
+
+// 用于-代码参数 01
+.codeArg01{
+  color: var(--codeFontColorParam);
+}
+
+// 用于-基础文本显示
+p{
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+// 用于-给某些需要突出显示的文字添加背景色
+.heibg{
+  background: var(--codeProminentBgColor);
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+// 用于-给主文本加大显示
+.bt{
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+html{
+  background: var(--htmlBg);
+}
+
+// 滚动条样式
+body{
+  overflow: hidden;
+}
+.scrollbar{
+
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #c678dd;
+  }
+}
+
+.el-switch__label.is-active{
+  color: orangered !important;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0s linear;
+  color: #c678dd;
+
+  &:hover{
+    color: orangered;
+  }
+}
